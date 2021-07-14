@@ -5,6 +5,236 @@
     --contrast-color: #FCDEC0;
 }
 
+@media (min-width: 438px){
+        /* Header */
+.sub-header .container{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    margin: 0 auto;
+    font-size: 5px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+}
+header{
+    font-family: 'Raleway', sans-serif;
+    color: black;
+}
+header .menu{    
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    list-style: none;
+    justify-content: center;
+}
+.btn-header a::before{
+    content: '';
+    position: absolute;
+
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1.7px;
+    background: linear-gradient(to right,#7D5A50, #B4846C, #E5B299);
+    z-index: 1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.7s ease-in-out;
+}
+
+.btn-header a:hover::before{
+    transform:scaleX(1);
+}
+
+.btn-header a{
+    color:var(--primary-color) !important;
+    position: relative;
+    font-weight: bolder;
+
+}
+.container li a{
+    padding: 0 0.7rem 0 0.7rem;
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
+
+/* Botones d redes sociales en el header */ 
+.right-container img{
+    padding: 5px 5px 5px 20px ;
+    width: 30px;;  
+    fill: brown  
+}
+
+/* fotos section */
+
+.muestra-fotos .container{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.muestra-fotos .container img{
+    height: 300px;
+    -webkit-transition:all .6s ease; /* Safari y Chrome */
+-moz-transition:all .6s ease; /* Firefox */
+-o-transition:all .6s ease; /* IE 9 */
+-ms-transition:all .6s ease; /* Opera */
+    border-radius: 3%;
+}
+
+.muestra-fotos .container img:hover{
+    transform:scale(1.15);
+    -webkit-transform:scale(1.15);
+-moz-transform:scale(1.15);
+-ms-transform:scale(1.15);
+-o-transform:scale(1.15);
+transform:scale(1.15);
+}
+
+/* Barra separadora  section */
+
+.separacion {
+    display: flex;
+    justify-content: center;
+}
+.separacion img{
+    padding: 40px;
+    width: 50px;
+    height: 50px;
+    transition: .6s;
+    margin: 0;
+
+}
+
+.separacion img:hover{
+    transform: rotate3d(360deg);
+    -ms-transform:rotate3d(360deg);
+-moz-transform:rotate(360deg);
+-webkit-transform:rotate(360deg);
+-o-transform:rotate(360deg);
+}
+
+
+/* Clientes y estilo section */
+
+.clientes h1{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Raleway', sans-serif;
+}
+.clientes .container{
+    display: flex;
+}
+.left-side img{
+    width: 20em;
+    height: 25em;
+    border-radius: 3%;
+}
+
+.left-side{
+    padding: 40px 0 0 60px;
+}
+
+.right-side{
+    padding: 40px 40px 0 40px;
+}
+
+.titulo-section{
+    font-size: 3rem;
+    padding: 0 0 0 40px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.right-side p, .right-side h3 {    
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+    padding: 20px 0 10px 0;
+}
+
+.right-side .btn-header{
+    padding: 15px;
+    border-radius: 3%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.right-side a{
+    text-decoration: none;
+    background-color: var(--contrast-color);
+    padding: .7rem;
+    color: black !important;
+}
+/* Comodidad section */
+.comodidad .container{
+    display: flex;
+}
+
+
+.comodidad h1{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+.right-side img{
+    border-radius: 3%;
+    width: 15em;
+}
+
+.comodidad .right-side{
+    padding: 40px 60px 0 0;
+
+}
+
+.comodidad .left-side{
+    padding: 40px 40px 0 40px;
+    text-align: right;
+}
+
+.comodidad .left-side p{    
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+    padding: 20px 0 10px 0;
+    font-size: 1.1rem;
+}
+
+/* hr settings */
+hr {
+    border: 0;
+    height: 2px;
+    margin:18px 0;
+    position:relative;
+    background: -moz-linear-gradient(left, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 10%, rgba(0,0,0,0.65) 50%, rgba(0,0,0,0) 90%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,0)), color-stop(10%,rgba(0,0,0,0)), color-stop(50%,rgba(0,0,0,0.65)), color-stop(90%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 10%,rgba(0,0,0,0.65) 50%,rgba(0,0,0,0) 90%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 10%,rgba(0,0,0,0.65) 50%,rgba(0,0,0,0) 90%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 10%,rgba(0,0,0,0.65) 50%,rgba(0,0,0,0) 90%,rgba(0,0,0,0) 100%); /* IE10+ */
+    background: linear-gradient(left, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 10%,rgba(0,0,0,0.65) 50%,rgba(0,0,0,0) 90%,rgba(0,0,0,0) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
+}
+hr:before {
+    content: "";
+    display: block;
+    border-top: solid 1px #f9f9f9;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+}
+
+
+     
+}
+
+
+
 /* Header */
 .sub-header .container{
     display:flex;
@@ -230,4 +460,429 @@ hr:before {
     z-index: 1;
 }
 
+@media only screen and (max-width:500px) and (min-width:341px){
+    /* Header */
+.sub-header .container{
+display:flex;
+flex-direction: row;
+align-items: right;
+padding: 0;
+margin: 0 auto;
+font-size: 19px;
+font-family: 'Raleway', sans-serif;
+font-weight: bolder;
+}
+header{
+font-family: 'Raleway', sans-serif;
+color: black;
+}
+header .menu{    
+display: flex;
+flex-direction: row;
+position: relative;
+list-style: none;
+font-size: 1.04rem;
+}
+.btn-header a::before{
+content: '';
+position: absolute;
+
+bottom: 0;
+left: 0;
+width: 100%;
+height: 1.7px;
+background: linear-gradient(to right,#7D5A50, #B4846C, #E5B299);
+z-index: 1;
+transform: scaleX(0);
+transform-origin: left;
+transition: transform 0.7s ease-in-out;
+}
+
+.btn-header a:hover::before{
+transform:scaleX(1);
+}
+
+.btn-header a{
+color:var(--primary-color) !important;
+position: relative;
+font-weight: bolder;
+
+}
+.container li a{
+padding: 0 0.7rem 0 0.7rem;
+text-decoration: none;
+color: black;
+font-weight: bolder;
+}
+
+/* Botones d redes sociales en el header */ 
+.right-container img{
+padding:0 5px 0 0 ;
+width: 30px;;  
+fill: brown  
+}
+
+/* fotos section */
+
+.muestra-fotos .container{
+display: none;
+}
+.muestra-fotos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    justify-content: center;
+
+}
+.img-responsive img{
+    width: 100%;
+    align-items: center;
+    border-radius: 5%;
+}
+/* Barra separadora  section */
+
+.separacion {
+display: flex;
+justify-content: center;
+}
+.separacion img{
+padding: 40px;
+width: 50px;
+height: 50px;
+transition: .6s;
+margin: 0;
+
+}
+
+.separacion img:hover{
+transform: rotate3d(360deg);
+-ms-transform:rotate3d(360deg);
+-moz-transform:rotate(360deg);
+-webkit-transform:rotate(360deg);
+-o-transform:rotate(360deg);
+}
+
+
+/* Clientes y estilo section */
+
+.clientes h1{
+margin: 0 auto;
+text-align: center;
+padding: 10px 0 30px 0;
+font-size: 1.5rem;
+font-family: 'Raleway', sans-serif;
+}
+.clientes .container{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+.left-side{
+    padding: 0
+}
+.left-side img{
+width: 20em;
+height: 25em;
+border-radius: 3%;
+}
+
+.titulo-section{
+margin: 0 auto;
+padding: 0;
+font-size: 3rem;
+font-family: 'Quicksand', sans-serif;
+}
+
+.right-side p, .right-side h3 {    
+font-family: 'Raleway', sans-serif;
+font-weight: bolder;
+}
+
+.right-side .btn-header{
+padding: 15px;
+border-radius: 3%;
+margin: 0 auto;
+text-align: center;
+font-size: 1.4rem;
+}
+
+.right-side a{
+text-decoration: none;
+background-color: var(--contrast-color);
+padding: .9rem;
+color: black !important;
+font-size: 1.9rem;
+}
+/* Comodidad section */
+.comodidad .container{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+
+.comodidad h1{
+margin: 0 auto;
+text-align: center;
+font-size: 1.5rem;
+font-family: 'Raleway', sans-serif;
+}
+
+.right-side img{
+
+border-radius: 3%;
+width: 18em;
+}
+
+
+.comodidad .left-side p{    
+font-family: 'Raleway', sans-serif;
+font-weight: bolder;
+font-size: 1.1rem;
+}
+
+/* hr settings */
+hr {
+border: 0;
+height: 2px;
+margin:18px 0;
+position:relative;
+background: -moz-linear-gradient(left, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 10%, rgba(0,0,0,0.65) 50%, rgba(0,0,0,0) 90%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,0)), color-stop(10%,rgba(0,0,0,0)), color-stop(50%,rgba(0,0,0,0.65)), color-stop(90%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 10%,rgba(0,0,0,0.65) 50%,rgba(0,0,0,0) 90%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 10%,rgba(0,0,0,0.65) 50%,rgba(0,0,0,0) 90%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 10%,rgba(0,0,0,0.65) 50%,rgba(0,0,0,0) 90%,rgba(0,0,0,0) 100%); /* IE10+ */
+background: linear-gradient(left, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 10%,rgba(0,0,0,0.65) 50%,rgba(0,0,0,0) 90%,rgba(0,0,0,0) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
+}
+hr:before {
+content: "";
+display: block;
+border-top: solid 1px #f9f9f9;
+width: 100%;
+height: 1px;
+position: absolute;
+top: 50%;
+z-index: 1;
+}
+
+
+ 
+}
+
+/* Para 600px */  
+@media only screen and (max-width: 620px) and (min-width: 501px) {  
+  /* Header */
+  .sub-header .container{
+    display:flex;
+    flex-direction: row;
+    align-items: right;
+    padding: 0;
+    margin: 0 auto;
+    font-size: 19px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+    }
+    header{
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    }
+    header .menu{    
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    list-style: none;
+    font-size: 1.3rem;
+    }
+    .btn-header a::before{
+    content: '';
+    position: absolute;
+    
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1.7px;
+    background: linear-gradient(to right,#7D5A50, #B4846C, #E5B299);
+    z-index: 1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.7s ease-in-out;
+    }
+    
+    .btn-header a:hover::before{
+    transform:scaleX(1);
+    }
+    
+    .btn-header a{
+    color:var(--primary-color) !important;
+    position: relative;
+    font-weight: bolder;
+    
+    }
+    .container li a{
+    padding: 0 0.7rem 0 0.7rem;
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    }
+    
+    /* Botones d redes sociales en el header */ 
+    .right-container img{
+    padding:0 5px 0 0 ;
+    width: 40px;  
+    fill: brown  
+    }
+    
+    /* fotos section */
+    
+    .muestra-fotos .container{
+    display: none;        
+    }
+    
+    .muestra-fotos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        justify-content: center;
+
+}
+    .img-responsive img{
+        width: 100%;
+        align-items: center;
+        border-radius: 5%;
+}
+    
+    /* Barra separadora  section */
+    
+    .separacion {
+    display: flex;
+    justify-content: center;
+    }
+    .separacion img{
+    padding: 40px;
+    width: 50px;
+    height: 50px;
+    transition: .6s;
+    margin: 0;
+    
+    }
+    
+    .separacion img:hover{
+    transform: rotate3d(360deg);
+    -ms-transform:rotate3d(360deg);
+    -moz-transform:rotate(360deg);
+    -webkit-transform:rotate(360deg);
+    -o-transform:rotate(360deg);
+    }
+    
+    
+    /* Clientes y estilo section */
+    
+    .clientes h1{
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px 0 30px 0;
+    font-size: 1.5rem;
+    font-family: 'Raleway', sans-serif;
+    }
+    .clientes .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+    .left-side{
+        padding: 0
+    }
+    .left-side img{
+    width: 20em;
+    height: 25em;
+    border-radius: 3%;
+    }
+    
+    .titulo-section{
+    margin: 0 auto;
+    padding: 0;
+    font-size: 3rem;
+    font-family: 'Quicksand', sans-serif;
+    }
+    
+    .right-side p, .right-side h3 {    
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+    }
+    
+    .right-side .btn-header{
+    padding: 15px;
+    border-radius: 3%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.4rem;
+    }
+    
+    .right-side a{
+    text-decoration: none;
+    background-color: var(--contrast-color);
+    padding: .9rem;
+    color: black !important;
+    font-size: 1.9rem;
+    }
+    /* Comodidad section */
+    .comodidad .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    
+    .comodidad h1{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Raleway', sans-serif;
+    }
+    
+    .right-side img{
+    
+    border-radius: 3%;
+    width: 18em;
+    }
+    
+    
+    .comodidad .left-side p{    
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+    font-size: 1.1rem;
+    }
+    
+    /* hr settings */
+    hr {
+    border: 0;
+    height: 2px;
+    margin:18px 0;
+    position:relative;
+    background: -moz-linear-gradient(left, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 10%, rgba(0,0,0,0.65) 50%, rgba(0,0,0,0) 90%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,0)), color-stop(10%,rgba(0,0,0,0)), color-stop(50%,rgba(0,0,0,0.65)), color-stop(90%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 10%,rgba(0,0,0,0.65) 50%,rgba(0,0,0,0) 90%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 10%,rgba(0,0,0,0.65) 50%,rgba(0,0,0,0) 90%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 10%,rgba(0,0,0,0.65) 50%,rgba(0,0,0,0) 90%,rgba(0,0,0,0) 100%); /* IE10+ */
+    background: linear-gradient(left, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 10%,rgba(0,0,0,0.65) 50%,rgba(0,0,0,0) 90%,rgba(0,0,0,0) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
+    }
+    hr:before {
+    content: "";
+    display: block;
+    border-top: solid 1px #f9f9f9;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    }
+}  
 
