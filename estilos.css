@@ -5,6 +5,9 @@
     --contrast-color: #FCDEC0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 
 
 
