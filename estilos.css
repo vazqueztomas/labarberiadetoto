@@ -180,7 +180,7 @@ header .menu{
 }
 
 
-.comodidad h1{
+.comodidad h1, .aprende h1{
     margin: 0 auto;
     text-align: center;
     font-size: 1.5rem;
@@ -234,6 +234,43 @@ hr:before {
     z-index: 1;
 }
 
+.aprende .container{
+    display: flex;
+}
+.aprende h1{
+    padding: 15px;
+}
+
+.texto-aprende{
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+.img-aprende img{
+    width: 450px;
+    padding: 20px 10px 10px 20px ;
+    border-radius: 5%;
+}
+.titulo-aprende{
+    font-size: 2.6rem;
+    padding: 0 0 0 20px;    
+    font-family: 'Quicksand', sans-serif;
+}
+
+.texto-aprende p{
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+    padding: 0 0 0 20px;
+}
+
+.boton-pagar{
+    padding: 0 0 0 20px;
+}
+
+.especs{
+    color: grey;
+    font-family: 'Quicksand', sans-serif;
+}
 @media only screen and (max-width:500px) and (min-width:341px){
     /* Header */
 .sub-header .container{
