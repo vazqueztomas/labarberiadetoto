@@ -490,12 +490,12 @@ z-index: 1;
     text-align: left;
 }
 .img-aprende img{
-    width: 450px;
+    width: 20em;
     padding: 20px 10px 10px 20px ;
     border-radius: 5%;
 }
 .titulo-aprende{
-    font-size: 2.6rem;
+    font-size: 2rem;
     padding: 0 0 0 20px;    
     font-family: 'Quicksand', sans-serif;
 }
@@ -711,7 +711,7 @@ z-index: 1;
     flex-direction: column;
 }
 .aprende h1{
-    padding: 12px;
+    padding: 10px;
 }
 
 .texto-aprende{
@@ -720,12 +720,13 @@ z-index: 1;
     text-align: left;
 }
 .img-aprende img{
-    width: 450 px;
+    width: 25em;
+    margin: 0 auto;
     padding: 20px 10px 10px 20px ;
     border-radius: 5%;
 }
 .titulo-aprende{
-    font-size: 2.6rem;
+    font-size: 2rem;
     padding: 0 0 0 20px;    
     font-family: 'Quicksand', sans-serif;
 }
@@ -972,12 +973,13 @@ z-index: 1;
     text-align: left;
 }
 .img-aprende img{
-    width: 450px;
+    width: 30em;
+    margin: 0 auto;
     padding: 20px 10px 10px 20px ;
     border-radius: 5%;
 }
 .titulo-aprende{
-    font-size: 2.6rem;
+    font-size: 2.3rem;
     padding: 0 0 0 20px;    
     font-family: 'Quicksand', sans-serif;
 }
