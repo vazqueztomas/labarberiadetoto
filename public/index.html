@@ -5,115 +5,169 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La barbería de Toto</title>
-    <link rel="stylesheet" href="estilos.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    
+    <meta name = 'title' content = 'La barbería de Toto'>
+    <meta name = 'description' content = 'Cambiá tu estilo, cambia tu forma de vida.'>
+    <meta name = 'author' content = '@vazquezcabj21'>
+    <meta name = 'copyright' content = "Todos los derechos reservados - Copyright 2022 - Ruins Design">
+
+    <meta name = 'robots' content = 'follow index'>
+    <meta name = 'og:title' content = 'La barbería de Toto'>
+    <meta name = 'og:url' content = 'https://labarberiadetoto.web.app'>
+    <meta name = 'og:description' content = 'Líderes en estilo, tu mejor corte. Creamos arte, creamos magia.'>
+    <meta name = 'og:image' content = './images/clientes-fotos.jpg'>
+
+    <meta name = 'twitter:title' content = 'La barbería de Toto'>
+    <meta name = 'twitter:image' content = './images/clientes-fotos.jpg'>
+    <meta name = 'twitter:description' content = 'Líderes en estilo, los mejores cortes de cabello.'>
+    <meta name = 'twitter:url' content = 'https://labarberiadetoto.web.app'> 
 
     <!-- Fonts styles -->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+<link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <section class="sub-header">
-        <div class="container">
-            <h1 id = "inicio-scroll">La barbería de Toto</h1>
-            <div class="right-container">
-                <a href="https://api.whatsapp.com/send?phone=+5492324681817&text=Hola, quisiera pedirte un turno? Me comunico desde la pagina web"  title="WhatsApp"><img class = 'wsp-1' alt = "Boton WhatsApp" src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJtNDM5LjI3NzM0NCA3Mi43MjI2NTZjLTQ2Ljg5ODQzOC00Ni44OTg0MzctMTA5LjIzODI4Mi03Mi43MjI2NTYtMTc1LjU2NjQwNi03Mi43MjI2NTYtLjAwMzkwNyAwLS4wMTk1MzIgMC0uMDIzNDM4IDAtMzIuODA0Njg4LjAwMzkwNjI1LTY0Ljc3MzQzOCA2LjM1NTQ2OS05NS4wMTE3MTkgMTguODgyODEyLTMwLjI0MjE4NyAxMi41MjczNDQtNTcuMzM1OTM3IDMwLjY0MDYyNi04MC41MzUxNTYgNTMuODM5ODQ0LTQ2Ljg5NDUzMSA0Ni44OTQ1MzItNzIuNzE4NzUgMTA5LjI0NjA5NC03Mi43MTg3NSAxNzUuNTY2NDA2IDAgMzkuNTUwNzgyIDkuNTQyOTY5IDc4Ljg1NTQ2OSAyNy42MjUgMTEzLjg3NWwtNDEuNzM0Mzc1IDExOS4yMjY1NjNjLTIuOTQxNDA2IDguNDEwMTU2LS44NTkzNzUgMTcuNTUwNzgxIDUuNDQ1MzEyIDIzLjg1MTU2MyA0LjQxMDE1NyA0LjQxNDA2MiAxMC4yMTQ4NDQgNi43NTc4MTIgMTYuMTgzNTk0IDYuNzU3ODEyIDIuNTU4NTk0IDAgNS4xNDQ1MzItLjQyOTY4OCA3LjY2Nzk2OS0xLjMxMjVsMTE5LjIyNjU2My00MS43MzA0NjljMzUuMDE5NTMxIDE4LjA4MjAzMSA3NC4zMjQyMTggMjcuNjI1IDExMy44NzUgMjcuNjI1IDY2LjMyMDMxMiAwIDEyOC42Njc5NjgtMjUuODI4MTI1IDE3NS41NjY0MDYtNzIuNzIyNjU2IDQ2Ljg5NDUzMS00Ni44OTQ1MzEgNzIuNzIyNjU2LTEwOS4yNDYwOTQgNzIuNzIyNjU2LTE3NS41NjY0MDYgMC02Ni4zMjQyMTktMjUuODI0MjE5LTEyOC42NzU3ODEtNzIuNzIyNjU2LTE3NS41NzAzMTN6bS0yMS4yMzQzNzUgMzI5LjkwMjM0NGMtNDEuMjIyNjU3IDQxLjIyNjU2Mi05Ni4wMzUxNTcgNjMuOTI1NzgxLTE1NC4zMzIwMzEgNjMuOTI1NzgxLTM1LjY2NDA2MyAwLTcxLjA5Mzc1LTguODIwMzEyLTEwMi40NjA5MzgtMjUuNTE1NjI1LTUuNjg3NS0zLjAyMzQzNy0xMi40MTAxNTYtMy41NDI5NjgtMTguNDQ1MzEyLTEuNDI5Njg3bC0xMDguMzIwMzEzIDM3LjkxMDE1NiAzNy45MTQwNjMtMTA4LjMyMDMxM2MyLjExMzI4MS02LjA0Mjk2OCAxLjU4OTg0My0xMi43NjU2MjQtMS40MzM1OTQtMTguNDQ5MjE4LTE2LjY5MTQwNi0zMS4zNTkzNzUtMjUuNTE1NjI1LTY2Ljc4OTA2My0yNS41MTU2MjUtMTAyLjQ1NzAzMiAwLTU4LjI5Njg3NCAyMi43MDMxMjUtMTEzLjEwOTM3NCA2My45MjU3ODEtMTU0LjMzMjAzMSA0MS4yMTg3NS00MS4yMTg3NSA5Ni4wMjM0MzgtNjMuOTIxODc1IDE1NC4zMTY0MDYtNjMuOTI5Njg3aC4wMTk1MzJjNTguMzAwNzgxIDAgMTEzLjEwOTM3NCAyMi43MDMxMjUgMTU0LjMzMjAzMSA2My45Mjk2ODcgNDEuMjI2NTYyIDQxLjIyMjY1NyA2My45Mjk2ODcgOTYuMDMxMjUgNjMuOTI5Njg3IDE1NC4zMzIwMzEgMCA1OC4zMDA3ODItMjIuNzAzMTI1IDExMy4xMTMyODItNjMuOTI5Njg3IDE1NC4zMzU5Mzh6bTAgMCIvPjxwYXRoIGQ9Im0zNTUuOTg0Mzc1IDI3MC40Njg3NWMtMTEuNDIxODc1LTExLjQyMTg3NS0zMC4wMDc4MTMtMTEuNDIxODc1LTQxLjQyOTY4NyAwbC0xMi40OTIxODggMTIuNDkyMTg4Yy0zMS4wMTk1MzEtMTYuOTAyMzQ0LTU2LjEyMTA5NC00Mi4wMDM5MDctNzMuMDI3MzQ0LTczLjAyMzQzOGwxMi40OTIxODgtMTIuNDkyMTg4YzExLjQyNTc4MS0xMS40MjE4NzQgMTEuNDI1NzgxLTMwLjAwNzgxMiAwLTQxLjQyOTY4N2wtMzMuNjY0MDYzLTMzLjY2NDA2M2MtMTEuNDIxODc1LTExLjQyMTg3NC0zMC4wMDc4MTItMTEuNDIxODc0LTQxLjQyOTY4NyAwbC0yNi45Mjk2ODggMjYuOTI5Njg4Yy0xNS40MjU3ODEgMTUuNDI1NzgxLTE2LjE5NTMxMiA0MS45NDUzMTItMi4xNjc5NjggNzQuNjc1NzgxIDEyLjE3OTY4NyAyOC40MTc5NjkgMzQuNDY4NzUgNTkuNjUyMzQ0IDYyLjc2MTcxOCA4Ny45NDUzMTMgMjguMjkyOTY5IDI4LjI5Mjk2OCA1OS41MjczNDQgNTAuNTgyMDMxIDg3Ljk0NTMxMyA2Mi43NjE3MTggMTUuNTUwNzgxIDYuNjY0MDYzIDI5LjY5NTMxMiA5Ljk4ODI4MiA0MS45MTc5NjkgOS45ODgyODIgMTMuNTAzOTA2IDAgMjQuNjYwMTU2LTQuMDU4NTk0IDMyLjc1NzgxMi0xMi4xNTYyNWwyNi45Mjk2ODgtMjYuOTMzNTk0di4wMDM5MDZjNS41MzUxNTYtNS41MzUxNTYgOC41ODIwMzEtMTIuODkwNjI1IDguNTgyMDMxLTIwLjcxNDg0NCAwLTcuODI4MTI0LTMuMDQ2ODc1LTE1LjE4MzU5My04LjU4MjAzMS0yMC43MTQ4NDN6bS0xNC41IDgwLjc5Mjk2OWMtNC40MDIzNDQgNC40MDIzNDMtMTcuOTQxNDA2IDUuOTQ1MzEyLTQxLjYwOTM3NS00LjE5NTMxMy0yNC45OTIxODgtMTAuNzEwOTM3LTUyLjg4NjcxOS0zMC43NDIxODctNzguNTQyOTY5LTU2LjM5ODQzN3MtNDUuNjgzNTkzLTUzLjU0Njg3NS01Ni4zOTQ1MzEtNzguNTM5MDYzYy0xMC4xNDQ1MzEtMjMuNjY3OTY4LTguNjAxNTYyLTM3LjIxMDkzNy00LjE5OTIxOS00MS42MTMyODFsMjYuNDE0MDYzLTI2LjQxNDA2MyAzMi42MjUgMzIuNjI4OTA3LTE1LjYzNjcxOSAxNS42NDA2MjVjLTcuMDcwMzEzIDcuMDcwMzEyLTguNzc3MzQ0IDE3Ljc5Mjk2OC00LjI0MjE4NyAyNi42ODM1OTQgMjAuNTU4NTkzIDQwLjMxMjUgNTIuNzM0Mzc0IDcyLjQ4ODI4MSA5My4wNDY4NzQgOTMuMDQ2ODc0IDguODk0NTMyIDQuNTM1MTU3IDE5LjYxNzE4OCAyLjgzMjAzMiAyNi42ODc1LTQuMjQyMTg3bDE1LjYzNjcxOS0xNS42MzY3MTkgMzIuNjI4OTA3IDMyLjYyODkwNnptMCAwIi8+PC9zdmc+" /></a>
-                <a href="https://www.instagram.com/toto.bshop/" title="Instagram"><img class ="wsp-2" alt =" Boton Instagram" src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNTEyLjAwMDk2IDUxMi4wMDA5NiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJtMzczLjQwNjI1IDBoLTIzNC44MTI1Yy03Ni40MjE4NzUgMC0xMzguNTkzNzUgNjIuMTcxODc1LTEzOC41OTM3NSAxMzguNTkzNzV2MjM0LjgxNjQwNmMwIDc2LjQxNzk2OSA2Mi4xNzE4NzUgMTM4LjU4OTg0NCAxMzguNTkzNzUgMTM4LjU4OTg0NGgyMzQuODE2NDA2Yzc2LjQxNzk2OSAwIDEzOC41ODk4NDQtNjIuMTcxODc1IDEzOC41ODk4NDQtMTM4LjU4OTg0NHYtMjM0LjgxNjQwNmMwLTc2LjQyMTg3NS02Mi4xNzE4NzUtMTM4LjU5Mzc1LTEzOC41OTM3NS0xMzguNTkzNzV6bTEwOC41NzgxMjUgMzczLjQxMDE1NmMwIDU5Ljg2NzE4OC00OC43MDcwMzEgMTA4LjU3NDIxOS0xMDguNTc4MTI1IDEwOC41NzQyMTloLTIzNC44MTI1Yy01OS44NzEwOTQgMC0xMDguNTc4MTI1LTQ4LjcwNzAzMS0xMDguNTc4MTI1LTEwOC41NzQyMTl2LTIzNC44MTY0MDZjMC01OS44NzEwOTQgNDguNzA3MDMxLTEwOC41NzgxMjUgMTA4LjU3ODEyNS0xMDguNTc4MTI1aDIzNC44MTY0MDZjNTkuODY3MTg4IDAgMTA4LjU3NDIxOSA0OC43MDcwMzEgMTA4LjU3NDIxOSAxMDguNTc4MTI1em0wIDAiLz48cGF0aCBkPSJtMjU2IDExNi4wMDM5MDZjLTc3LjE5NTMxMiAwLTEzOS45OTYwOTQgNjIuODAwNzgyLTEzOS45OTYwOTQgMTM5Ljk5NjA5NHM2Mi44MDA3ODIgMTM5Ljk5NjA5NCAxMzkuOTk2MDk0IDEzOS45OTYwOTQgMTM5Ljk5NjA5NC02Mi44MDA3ODIgMTM5Ljk5NjA5NC0xMzkuOTk2MDk0LTYyLjgwMDc4Mi0xMzkuOTk2MDk0LTEzOS45OTYwOTQtMTM5Ljk5NjA5NHptMCAyNDkuOTc2NTYzYy02MC42NDA2MjUgMC0xMDkuOTgwNDY5LTQ5LjMzNTkzOC0xMDkuOTgwNDY5LTEwOS45ODA0NjkgMC02MC42NDA2MjUgNDkuMzM5ODQ0LTEwOS45ODA0NjkgMTA5Ljk4MDQ2OS0xMDkuOTgwNDY5IDYwLjY0NDUzMSAwIDEwOS45ODA0NjkgNDkuMzM5ODQ0IDEwOS45ODA0NjkgMTA5Ljk4MDQ2OSAwIDYwLjY0NDUzMS00OS4zMzU5MzggMTA5Ljk4MDQ2OS0xMDkuOTgwNDY5IDEwOS45ODA0Njl6bTAgMCIvPjxwYXRoIGQ9Im0zOTkuMzQzNzUgNjYuMjg1MTU2Yy0yMi44MTI1IDAtNDEuMzY3MTg4IDE4LjU1ODU5NC00MS4zNjcxODggNDEuMzY3MTg4IDAgMjIuODEyNSAxOC41NTQ2ODggNDEuMzcxMDk0IDQxLjM2NzE4OCA0MS4zNzEwOTRzNDEuMzcxMDk0LTE4LjU1ODU5NCA0MS4zNzEwOTQtNDEuMzcxMDk0LTE4LjU1ODU5NC00MS4zNjcxODgtNDEuMzcxMDk0LTQxLjM2NzE4OHptMCA1Mi43MTg3NWMtNi4yNTc4MTIgMC0xMS4zNTE1NjItNS4wOTM3NS0xMS4zNTE1NjItMTEuMzUxNTYyIDAtNi4yNjE3MTkgNS4wOTM3NS0xMS4zNTE1NjMgMTEuMzUxNTYyLTExLjM1MTU2MyA2LjI2MTcxOSAwIDExLjM1NTQ2OSA1LjA4OTg0NCAxMS4zNTU0NjkgMTEuMzUxNTYzIDAgNi4yNTc4MTItNS4wOTM3NSAxMS4zNTE1NjItMTEuMzU1NDY5IDExLjM1MTU2MnptMCAwIi8+PC9zdmc+" /></a>    
-            </div>
-        </div>
-    </section>  
-    <section class="header">
-        <header>
+    <header>
+        <section class="sub-header">
             <div class="container">
-                <ul class = "menu">
-                    <li><a href="#inicio-scroll">Inicio</a></li>
-                    <li><a href="#servicio-scroll">Servicios</a></li>
-                    <li><a href="#tendencias-scroll">Aprendé barbería</a></li>
-                    <li class="btn-header"> <a href="https://api.whatsapp.com/send?phone=+5492324681817&text=Hola, quisiera pedirte un turno? Me comunico desde la pagina web">RESERVÁ TU TURNO</a></li>
-                </ul>
+                <div class="row">
+                    
+                    <div class="col-md-12 text-center d-flex justify-content-between mt-4">
+                        
+                        <h1 id = "inicio-scroll">La barbería de Toto</h1>
+                        <div class="icons">
+                            
+                        <a href="https://api.whatsapp.com/send?phone=+5492324681817&text=Hola, quisiera pedirte un turno? Me comunico desde la pagina web"  title="WhatsApp"><i class="bi bi-whatsapp text-dark fs-4"></i></a>
+                        <a href="https://www.instagram.com/toto.bshop/" title="Instagram"><i class="bi bi-instagram text-dark fs-4 mx-2"></i></a>        
+                        </div>  
+                     </div>
+                </div>  
             </div>
-        </header>
+        </section>  
+    </header>
+    
+    <section class="botonera">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <ul class = "menu">
+                            <li><a href="#inicio-scroll">Inicio</a></li>
+                            <li><a href="#servicio-scroll">Servicios</a></li>
+                            <li><a href="#tendencias-scroll">Aprendé barbería</a></li>
+                            <li class="btn-header"> <a href="https://api.whatsapp.com/send?phone=+5492324681817&text=Hola, quisiera pedirte un turno? Me comunico desde la pagina web">RESERVÁ TU TURNO</a></li>
+                        </ul>
+                    </div>
+                </div>               
+            </div>
     </section>
 
-    </section>
     <section class="muestra-fotos">
-        <div class="img-resposive">
-            <img src="./images/fotos_header2.jpg" alt="">
-        </div>
         <div class="container">
-            <img src="./images/fotos_header3.jpg" alt="foto-corte1">
-            <img src="./images/fotos_header1.jpg" alt="foto-corte2">
-            <img src="./images/fotos_header6.jpg" alt="foto-corte3">
-            <img src="./images/fotos_header4.jpg" alt="foto-corte4">
-            <img src="./images/fotos_header5.jpg" alt="foto-corte5">
-
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="img-resposive">
+                        <img src="./images/fotos_header2.jpg" alt="">
+                    </div>
+                    <div class="contain d-flex">
+                        <img src="./images/fotos_header3.jpg" class = 'p-4' alt="foto-corte1">
+                        <img src="./images/fotos_header1.jpg" class = 'p-4' alt="foto-corte2">
+                        <img src="./images/fotos_header6.jpg" class = 'p-4' alt="foto-corte3">
+                        <img src="./images/fotos_header4.jpg" class = 'p-4' alt="foto-corte4">
+                        <img src="./images/fotos_header5.jpg" class = 'p-4' alt="foto-corte5">
+            
+                    </div>
+                </div>
+            </div>
         </div>
-    </section>
-    <section class="separacion">
-        <img src="./images/tijeras.svg" alt="Separacion">
+        
     </section>
     
-    <hr>
-    <section class="clientes" id = "servicio-scroll">
-        <h1>Porque cuidamos el estilo de los clientes.</h1>
-    <div class="container">
-            <div class="left-side">
+    <section class="clientes mt-5" id = "servicio-scroll">
+        <div class="container">
+        <div class="row">
+            <div class="col-md-12">                
+                <h1 class = 'mb-5'>Porque cuidamos el estilo de los clientes.</h1>  
+            </div>
+            <div class="col-md-4">                
                 <img src="./images/clientes-fotos.jpg" alt="foto-faro">
             </div>
-            <div class="right-side">
-                <h2 class = "titulo-section">Desde 2020 revolucionando.</h2>
-                <p>Porque buscamos elegancia, estilo y carácter con nuestros cortes. <br>Porque queremos que pases un buen rato y te lleves una buena experencia. <br>Porque este proyecto recién empieza y queremos que seas parte. </p>
-                <p>Podés venir con un corte que quieras hacerte o pedir una recomendación, porque nuestra idea es buscar <br>principalmente la buena onda y crear el mejor ambiente posible.</p>
-                <p class="btn-header"><a href="https://api.whatsapp.com/send?phone=+5492324681817&text=Hola, quisiera pedirte un turno? Me comunico desde la pagina web" title= "PEDI TU TURNO"> PEDÍ TU TURNO</a></p>
+
+            <div class="col-md-8">
+                    <h2 class = "titulo-section">Desde 2020 revolucionando.</h2>
+                    <p>Porque buscamos elegancia, estilo y carácter con nuestros cortes. <br>Porque queremos que pases un buen rato y te lleves una buena experencia. <br>Porque este proyecto recién empieza y queremos que seas parte. </p>
+                    <p>Podés venir con un corte que quieras hacerte o pedir una recomendación, porque nuestra idea es buscar <br>principalmente la buena onda y crear el mejor ambiente posible.</p>
+                    <p class="btn-header"><a href="https://api.whatsapp.com/send?phone=+5492324681817&text=Hola, quisiera pedirte un turno? Me comunico desde la pagina web" title= "PEDI TU TURNO" class = 'p-2'> PEDÍ TU TURNO</a></p>
+          
+            </div>
             </div>
         </div>
     </section>
-    <br>
-    <hr>
 
-    <section class="comodidad">
-        <h1>La comodidad como privilegio.</h1>
+    <section class="comodidad mt-5">
         <div class="container">
-            <div class="left-side">
+        <div class="row">
+            <div class="col-md-12">
+                
+                <h1 class = 'mb-5'>La comodidad como privilegio.</h1>
+            </div>
+            <div class="col-md-9">                
                 <h2 class = "titulo-section">Imponiendo estilos con la comodidad de casa.</h2>
                 <p>La ventaja de esta época es poder coordinar para sacar un turno.</p>
                 <p>Continuamente estamos adaptándonos a las nuevas tecnologías, para brindarte comodidad y simpleza.</p>
                 <p>Porque lo creemos elemental, incorporamos WhatsApp, Instagram y nuestra página web. <br>Todo al alcance de tu mano. Simpleza, rapidez y adaptación.</p>
             </div>
-            <div class="right-side">
-                <img src="./images/comodidades-foto.jpg" id = "tendencias-scroll" alt="foto-faro">
+            <div class="col-md-3">                <img src="./images/comodidades-foto.jpg" id = "tendencias-scroll" alt="foto-faro" class = 'img-fluid'>
+            </div>
+        </div>
+        </div>
+    </section>
 
-            </div>
-        </div>
-    </section>
-    <hr>
-    <section class="aprende">
-        <h1>Aprendé barbería. Formá tu futuro.</h1>
+
+    <section class="aprende my-4">
         <div class="container">
-            <div class="img-aprende">
-                <img src="images/aprende.jpg" alt="">
-            </div>
-            <div class="texto-aprende">
-                <h2 class="titulo-aprende">
-                    Comenzá en el arte de la peluquería. Formate de manera profesional.
-                </h2>
-                <p>Te ofrecemos una enseñanza básica en un formato de archivo .PDF, para que leas y te formes en el rubro de la barbería.</p>
-                <p>Mezclamos la tecnología y nos adaptamos a la virtualidad inclusive para enseñar. Aprovechá el PDF que te brindamos para empezar un camino en el mundo profesional.</p>
-                <div class="boton-pagar">
-                    <script src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
-                    data-preference-id="410461044-f53c616d-af33-47f9-a9e2-ffe0117513b0" data-source="button">
-                    </script>
-                    
-                    
-                <h6 class = "especs">
-                    ** Valor sujeto a precios argentinos (ARS). Total del valor del PDF = $250,00 ARS. Sujeto a modificaciones. Todos los derechos reservados. 
-                </h6>
+            <div class="row">
+                <div class="col-md-12 mb-4">
+                    <h1>Aprendé barbería. Formá tu futuro.</h1>
                 </div>
-                
-            </div>
+                <div class="col-md-12 d-flex">
+                    <div class="col-md 4">
+                    
+                        <img src="images/aprende.jpg" alt="">
+                        </div>
+                    <div class="col-md-8 p-5 ">
+                        <div class="texto-aprende">
+                                Comenzá en el arte de la peluquería. Formate de manera profesional.
+                            </h2>
+                            <p>Te ofrecemos una enseñanza básica en un formato de archivo .PDF, para que leas y te formes en el rubro de la barbería.</p>
+                            <p>Mezclamos la tecnología y nos adaptamos a la virtualidad inclusive para enseñar. Aprovechá el PDF que te brindamos para empezar un camino en el mundo profesional.</p>
+                            <div class="boton-pagar">
+                                <script src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+                                data-preference-id="410461044-f53c616d-af33-47f9-a9e2-ffe0117513b0" data-source="button">
+                                </script>
+                                
+                                
+                            <h6 class = "especs text-dark">
+                                ** Valor sujeto a precios argentinos (ARS). Total del valor del PDF = $250,00 ARS. Sujeto a modificaciones. Todos los derechos reservados. 
+                            </h6>
+                            </div>
+                        
+                    </div>
+                    </div>
+                </div>
+               
         </div>
     </section>
+
+    <script src = './script/main.js' type = 'module'></script>
 </body>
 </html>
