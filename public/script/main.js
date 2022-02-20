@@ -1,5 +1,6 @@
 const d = document;
 const sectionFotos = d.getElementById('muestra-fotos ')
+const foto = d.getElementById('foto-p')
 
 
 // si detecta que esta en mobile
