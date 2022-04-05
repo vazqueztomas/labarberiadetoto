@@ -1,5 +1,3 @@
-# labarberiadetoto
-Proyecto original de la Barbería de Toto
 
 <h2>La Barbería de Toto</h2>
 
